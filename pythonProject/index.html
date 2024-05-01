@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>com python</title>
-    <link rel="stylesheet" href="../desafiocordel/style.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Attack on Titan</title>
 </head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro .logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.characters .character-card {
+  width: 300px;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.characters .character-card:hover {
+  transform: translateY(-5px);
+}
+
+.characters .character-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.animation {
+  padding: 2rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+</style>
 <body>
-<header> <p>/p>
-</header
+  <header>
+    <h1>Attack on Titan</h1>
+  </header>
+  <main>
+    <section class="intro">
+      <img src="https://i.imgur.com/Q2YjXeB.png" alt="Attack on Titan logo" class="logo">
+      <p>Attack on Titan is a popular dark fantasy anime and manga series that follows the story of humanity's struggle for survival against giant humanoid creatures known as Titans. The series is known for its intense action, deep themes, and complex characters.</p>
+    </section>
+    <section class="characters">
+      <h2>Main Characters</h2>
+      <div class="character-card">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.b1bSrjnDMlVxJ4Hnmtb2IQHaEF&pid=Api&rs=1&c=1&qlt=95&w=189&h=104" alt="Eren Jaeger">
+        <h3>Eren Jaeger</h3>
+        <p>Eren is the protagonist of the series. He is driven by a desire for revenge against the Titans after they destroy his hometown and kill his mother.</p>
+      </div>
+      <div class="character-card">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.LoNLJ678DOn61rgvBTOlqgHaEK&pid=Api&P=0&h=180" alt="Mikasa Ackerman">
+        <h3>Mikasa Ackerman</h3>
+        <p>Mikasa is Eren's childhood friend and adoptive sister. She is one of the strongest soldiers in the Survey Corps and is fiercely protective of Eren.</p>
+      </div>
+      <div class="character-card">
+        <img src="../desafio11" alt="Armin Arlert">
+        <h3>Armin Arlert</h3>
+        <p>Armin is Eren's childhood friend and a skilled strategist. He often serves as the voice of reason among the trio.</p>
+      </div>
+    </section>
+    <section class="animation">
+      <h2>Titan Animation</h2>
+      <div class="titan-animation"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Attack on Titan</p>
+  </footer>
 </body>
 </html>
