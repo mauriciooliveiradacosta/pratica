@@ -1,9 +1,9 @@
-matriz = [[0]*2]*2
+def mamau (n1,n2):
+    soma = n1 * n2
+    return soma
 
-1º 1 2 3 4
-2º 3 4 6 8
-3º 5 6 7 8
-
-
+n1 = int (input('Digite um número: '))
+n2 = int (input('Digite um número: '))
+print('\033[34mO resultado é:\033[m', mamau(n1,n2))
 
 
