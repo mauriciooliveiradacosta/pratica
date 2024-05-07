@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de tabela</title>
+</head>
+    <style>
+        body{
+            margin:0px;
+        }
+        table{
+            background-color: aqua;
+            border: 1px solid black;
+            border-collapse: collapse;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        col#mangas{
+            background-color: cyan;
+        }
+        tr:nth-child(even){
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+        div#conteiner{
+            height: 96vh;
+            background-color: gold;
+        }
+    </style>
+<body>
+    <div id="conteiner">
+            <table>
+                <colgroup>
+                    <col id="mangas">
+                </colgroup>
+               <tr>
+                    <th>Séries de mangá </th>
+                    <th>Série de mangá	Autor(es)</th>
+                    <th>Data de publicação</th>
+               </tr>
+               <tr>
+                    <td>Naruto</td>
+                    <td>Masashi Kishimoto</td>
+                    <td>1999–2014</td>
+               </tr>
+               <tr>
+                    <td>Bleach</td>
+                    <td>Tite Kubo	</td>
+                    <td>2001–2016</td>
+               </tr>
+               <tr>
+                    <td>Dragon Ball</td>
+                    <td>Akira Toriyama</td>
+                    <td>1986-presente</td>
+               </tr>
+               <tr>
+                    <td>One Piece</td>
+                    <td>Eiichiro Oda</td>
+                    <td>1997–presente</td>
+               </tr>
+               <tr>
+                    <td>JoJo no Kimyou na Bouken</td>
+                    <td>Hirohiko Araki</td>
+                    <td>1986–presente</td>
+               </tr>
+               <tr>
+                    <td>Shingeki No Kyojin</td>
+                    <td>Hajime Isayama</td>
+                    <td>2009–2021</td>
+               </tr>
+            </table>
+    </div>
+</body>
+</html>
