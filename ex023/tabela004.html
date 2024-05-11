@@ -3,55 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tabela de filmes</title>
+    <title>Tabelas</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        table{
+
+        table {
             border-collapse: collapse;
         }
-        table th,td{
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
             padding: 10px;
         }
-        th,td{
-            text-align: center;
-            border: 1px solid black;
-        }
-        td{
-            background-color: lightblue;
-        }
-        th{
-            background-color: lightgray;
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+    <h1>Exercício de Tabelas</h1>
     <table>
-        <caption>filmes favoritos</caption>
-            <thead>
-                <tr>
-                    <th rowspan="3">Grupo</th>
-                    <th >Nomes</th>
-                    <th colspan="3">Filmes</th>
-                </tr>
-            </thead>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
-                <td>ana maria santos</td>
-                <td>alien</td>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
                 <td>Rambo</td>
                 <td>Vingadores</td>
             </tr>
             <tr>
-                <td>beatriz souza</td>
+                <td>Beatriz Souza</td>
                 <td>Hulk</td>
-                <td>inception</td>
+                <td>Inception</td>
                 <td>Batman</td>
             </tr>
             <tr>

@@ -3,81 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio de tabela</title>
-</head>
+    <title>Exercício de Tabelas</title>
     <style>
-        body{
-            margin:0px;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
-        table{
-            background-color: aqua;
-            border: 1px solid black;
+
+        table {
+            width: 500px;
             border-collapse: collapse;
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%,-50%);
         }
-        th,td{
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
             border: 1px solid black;
-            padding: 10px;
-            
+            padding: 8px;
         }
-        col#mangas{
-            background-color: cyan;
+
+        .destaque {
+            background-color: chartreuse;
         }
-        tr:nth-child(even){
-            background-color: black;
-            color: white;
-            border: 1px solid white;
+
+        col.cnome {
+            background-color: chartreuse;
         }
-        div#conteiner{
-            height: 96vh;
-            background-color: gold;
+
+        .amarelo {
+            background-color: yellow;
         }
+
+        .vermelho {
+            background-color: red;
+        }
+
     </style>
+</head>
 <body>
-    <div id="conteiner">
-            <table>
-                <colgroup>
-                    <col id="mangas">
-                </colgroup>
-               <tr>
-                    <th>Séries de mangá </th>
-                    <th>Série de mangá	Autor(es)</th>
-                    <th>Data de publicação</th>
-               </tr>
-               <tr>
-                    <td>Naruto</td>
-                    <td>Masashi Kishimoto</td>
-                    <td>1999–2014</td>
-               </tr>
-               <tr>
-                    <td>Bleach</td>
-                    <td>Tite Kubo	</td>
-                    <td>2001–2016</td>
-               </tr>
-               <tr>
-                    <td>Dragon Ball</td>
-                    <td>Akira Toriyama</td>
-                    <td>1986-presente</td>
-               </tr>
-               <tr>
-                    <td>One Piece</td>
-                    <td>Eiichiro Oda</td>
-                    <td>1997–presente</td>
-               </tr>
-               <tr>
-                    <td>JoJo no Kimyou na Bouken</td>
-                    <td>Hirohiko Araki</td>
-                    <td>1986–presente</td>
-               </tr>
-               <tr>
-                    <td>Shingeki No Kyojin</td>
-                    <td>Hajime Isayama</td>
-                    <td>2009–2021</td>
-               </tr>
-            </table>
-    </div>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
 </body>
 </html>
