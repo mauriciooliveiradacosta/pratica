@@ -1,0 +1,33 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+menu {
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+}
+menu li{
+    background-color: gray;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    list-style: none;
+}
+menu li:hover{
+    background-color:rgba(0, 0, 0, 0.534);
+}
+h2{
+    text-align: center;
+}
+article{
+    display: block;
+    font-size: 1.2em;
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+}
+article p{
+    margin: 10px;
+}
