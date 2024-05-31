@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="ireg">
+                região
+            </label>
+            <select name="reg" id="ireg">
+                <option value="No">norte</option>
+                <option value="Su">sul</option>
+                <option value="Es">este</option>
+                <option value="Oe" selected>oeste</option>
+            </select>
+        </p>
+        <p>
+            <label for="iman">mangá</label>
+            <select name="man" id="iman">
+                <option value=""selected>---escolha---</option>
+                <optgroup label="acão">
+                    <option value="Ch">chainsaw ma</option>
+                    <option value="One">one piece</option>
+                    <option value="jo" >jojo</option>
+                </optgroup>
+                <optgroup label="romance">
+                    <option value="kokoro">boku no kokoro</option>
+                    <option value="sama" >Kaguya-sama</option>
+                    <option value="hory">Horymia</option>
+                </optgroup>
+            </select>
+            <p>
+                <label for="iprof">profissão</label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option value="cont">contabilista</option>
+                    <option value="den">dentista</option>
+                    <option value="eng">engenheiro</option>
+
+                    <option value="dev">desenvolvedor</option>
+                </datalist>
+            </p>
+        </p>
+        <input type="reset" value="limpar">
+        <input type="submit" value="enviar">
+
+    </form>
+</body>
+</html>
