@@ -1,3 +1,6 @@
 @charset "UTF-8";
 
 /*tela em pé*/
+body{
+    background:url(../imagens/cev-portrait.jpg);
+}
