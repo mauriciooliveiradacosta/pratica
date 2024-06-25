@@ -33,9 +33,6 @@ img{
     display: block;
     margin: auto;
 }
-img#tel{
-    display: none;
-}
 img#tel{  display: block;}
 img#tab{display: none;}
 img#impre{display: none;}
