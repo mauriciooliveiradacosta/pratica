@@ -40,7 +40,10 @@ menu {
 menu > ul {
     list-style-type: none;
 }
-
+menu li{
+    margin: 7px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.568);
+}
 menu > ul > li > a {
     display: block;
     padding: 10px;
