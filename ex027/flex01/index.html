@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <style>
+        :root{
+            --cor1:#F2B84B;
+            --cor2:#D96F32;
+            --cor3:#730202;
+        }
+        #container{
+            background-color:var(--cor1) ;
+            display: flex;
+        }
+        .item{
+            flex: auto;
+            background-color: var(--cor2);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>
