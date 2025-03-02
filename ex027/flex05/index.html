@@ -3,38 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexible box</title>
-    <style>
-        :root{
-            --cor1:#F2B84B;
-            --cor2:#D96F32;
-            --cor3:#730202;
-        }
-        *{
-            margin: 0px;
-            box-sizing: border-box;
+    <title>centralizando com flex</title>
+    <link rel="stylesheet" href="style.css">
 
-        }
-        #container{
-            background-color:var(--cor1) ;
-            height: 400px;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content:center;
-            align-items: center;
-        }
-        .item{
-            border: 1px solid black;
-            padding: 20px;
-            width: 150px;
-            height: 150px;
-            background-color: var(--cor2);
-        }
-    </style>
 </head>
 <body>
-    <div id="container">
-        <div class="item">A</div>
-    </div>
+    <main>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </main>
 </body>
 </html>

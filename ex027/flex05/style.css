@@ -1,0 +1,26 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkcyan;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+main{
+    background-color:rgb(242, 101, 0) ;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.box{
+    background-color: aliceblue;
+    width: 150px;
+    height: 150px;
+}
