@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento do wrap</title>
+    <style>
+        :root{
+            --cor1:#F2B84B;
+            --cor2:#D96F32;
+            --cor3:#730202;
+        }
+        #container{
+            background-color:var(--cor1) ;
+            display: flex;
+            height: 400px;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content:  space-around;
+        }
+        .item{
+            padding: 50px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: var(--cor2);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+</body>
+</html>
